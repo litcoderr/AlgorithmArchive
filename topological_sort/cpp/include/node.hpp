@@ -5,6 +5,7 @@
 
 class Node {
 public:
+    int idx;
     int in_dim;
     int temp;
     std::vector<Node*> to; 
