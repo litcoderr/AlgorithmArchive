@@ -9,6 +9,6 @@ public:
     std::vector<Node*> adj;
 
     Node(int index);
-}
+};
 
 #endif
