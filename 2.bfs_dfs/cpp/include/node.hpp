@@ -3,6 +3,7 @@
 
 #include <vector>
 
+
 class Node {
 public:
     int index;
@@ -10,5 +11,11 @@ public:
 
     Node(int index);
 };
+
+namespace search {
+    void bfs(int N, Node** nodes, int start, std::vector<int>& order);
+    void dfs(int N, Node** nodes, int start, std::vector<int>& order);
+    void dfs_(int N, Node** nodes, int current, std::vector<int>& order, bool* visited);
+}
 
 #endif
