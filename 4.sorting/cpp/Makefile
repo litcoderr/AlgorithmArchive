@@ -2,7 +2,7 @@ GPP:=g++
 
 SRC_DIR:=src/
 INC_DIR:=include/
-GPP_FLAG:= -std=c++14 -I ${INC_DIR}
+GPP_FLAG:= -std=c++14 -pthread -I ${INC_DIR}
 
 TARGET:=main
 TARGET_SRC:=${SRC_DIR}${TARGET}.cpp
