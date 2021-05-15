@@ -1,32 +1,42 @@
 import argparse
-from bfs_dfs import bfs, dfs, Node
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--input_file")
 args = parser.parse_args()
 
+def preOrder(tree, index):
+    if index < len(tree):
+        print("{} ".format(tree[index]), end='')
+        preOrder(tree, 2*index)
+        preOrder(tree, 2*index+1)
+
+def inOrder(tree, index):
+    if index < len(tree):
+        inOrder(tree, 2*index)
+        print("{} ".format(tree[index]), end='')
+        inOrder(tree, 2*index+1)
+
+def postOrder(tree, index):
+    if index < len(tree):
+        postOrder(tree, 2*index)
+        postOrder(tree, 2*index+1)
+        print("{} ".format(tree[index]), end='')
+
 
 if __name__ == "__main__":
     with open(args.input_file, "r") as f:
         N = int(f.readline())
+        tree = list(map(lambda x: int(x), f.readline().split(" ")))
+        tree.insert(0, -1)
 
-        nodes = []
-        for i in range(N):
-            nodes.append(Node(i))
+    print("Pre-Order: ", end='') 
+    preOrder(tree, 1)
+    print("")
 
-        while True:
-            line = f.readline()
-            if not line:
-                break
-            else:
-                n_a, n_b = tuple(map(lambda x: int(x), line.split(" ")))
-                nodes[n_a].adj.append(nodes[n_b])
-                nodes[n_b].adj.append(nodes[n_a])
+    print("In-Order: ", end='') 
+    inOrder(tree, 1)
+    print("")
 
-        bfs_order = []
-        bfs(0, nodes, bfs_order)
-        print("BFS order: {}".format(bfs_order)) 
-
-        dfs_order = []
-        dfs(0, nodes, dfs_order)
-        print("DFS order: {}".format(dfs_order)) 
+    print("Post-Order: ", end='') 
+    postOrder(tree, 1)
+    print("")
