@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 
-typedef struct Edege {
+typedef struct Edge {
     int v1;
     int v2;
     int weight;
