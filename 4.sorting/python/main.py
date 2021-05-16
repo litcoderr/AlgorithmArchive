@@ -35,7 +35,7 @@ def merge(id, arr, i, median, j):
 
     index = 0
     l_index = i
-    r_index = j
+    r_index = median+1
 
     while l_index <= median and r_index <= j:
         if arr[l_index] < arr[r_index]:
