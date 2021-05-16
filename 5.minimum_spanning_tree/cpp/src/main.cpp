@@ -10,10 +10,12 @@ typedef struct Edege {
 
 class Vertex {
 public:
+    int index;
     Vertex* parent;
     std::vector<Vertex*> child;
 
-    Vertex() {
+    Vertex(int index) {
+        this->index = index;
         parent = this;
     }
 };
@@ -73,7 +75,7 @@ int main(int argc, char* argv[]) {
     std::priority_queue<Edge, std::vector<Edge>, EdgeCompare> que(edges.begin(), edges.end());
 
     for(int i=0; i<=N; i++) {
-        Vertex* v = new Vertex();
+        Vertex* v = new Vertex(i);
         vertices.push_back(v);
     }
 
@@ -84,6 +86,11 @@ int main(int argc, char* argv[]) {
         que.pop();
 
         bool did_merge = merge(e, vertices);
+        printf("did_merge: %d ", did_merge);
+        for(Vertex* v: vertices) {
+            printf("(%d: %d) ", v->index, v->parent->index);
+        }
+        printf("\n");
         if (did_merge) result.push_back(e);
     }
 
