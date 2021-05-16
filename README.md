@@ -7,9 +7,9 @@ Algorithm / Data Structure archive
 
 3. Tree Traversal (Inorder, Pre-order, Post-order) [ [cpp](https://github.com/litcoderr/AlgorithmArchive/tree/main/3.tree_traversal/cpp) / [python](https://github.com/litcoderr/AlgorithmArchive/tree/main/3.tree_traversal/python) ]
 
-4. Sorting (Insertion, Selection, Merge, Quick, Counting, Heap) [ [cpp](https://github.com/litcoderr/AlgorithmArchive/tree/main/4.sorting/cpp) / [python](https://github.com/litcoderr/AlgorithmArchive/tree/main/4.sorting/python) ]
+4. Sorting (Insertion, Selection, Merge, Quick, Counting, Heap) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/4.sorting/cpp) / [python](https://github.com/litcoderr/AlgorithmArchive/tree/main/4.sorting/python) ]
 
-5. Kruscal's Algorithm (minimum spanning forest)
+5. Kruscal's Algorithm (minimum spanning forest) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/5.minimum_spanning_tree/cpp) / [python]() ]
 
 6. Floyd Warshall Algorithm (shortest path)
 
