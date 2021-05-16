@@ -25,15 +25,15 @@ bool isCycle(Vertex* v1, Vertex* v2) {
     else false;
 }
 
-bool merge_(Vertex* v_parent, Vertex* v_child) {
-    if(!isCycle(v_parent, v_child)) { // merge only if v1 and v2 is not a cycle
-        for(Vertex* v: v_child->child) {
-            merge_(v_parent, v);
+bool merge_(Vertex* v1, Vertex* v2) {
+    if(!isCycle(v1, v2)) { // merge only if v1 and v2 is not a cycle
+        for(Vertex* v: v2->child) {
+            merge_(v1, v);
         }
 
-        v_child->parent = v_parent;
-        v_child->child.clear();
-        v_parent->child.push_back(v_child);
+        v2->parent = v1->parent;
+        v2->child.clear();
+        v1->parent->child.push_back(v2);
 
         return true;
     }else return false;
@@ -43,7 +43,7 @@ bool merge(Edge& edge, std::vector<Vertex*>& vertices) {
     Vertex* v1 = vertices[edge.v1];
     Vertex* v2 = vertices[edge.v2];
 
-    if(v1->child.size() > v2->child.size()) {
+    if(v1->parent->child.size() > v2->parent->child.size()) {
         return merge_(v1, v2);
     }else {
         return merge_(v2, v1);
@@ -86,16 +86,12 @@ int main(int argc, char* argv[]) {
         que.pop();
 
         bool did_merge = merge(e, vertices);
-        printf("did_merge: %d ", did_merge);
-        for(Vertex* v: vertices) {
-            printf("(%d: %d) ", v->index, v->parent->index);
-        }
-        printf("\n");
         if (did_merge) result.push_back(e);
     }
 
+    printf("Result Edges\n");
     for(Edge e: result) {
-        printf("%d %d %d\n", e.v1, e.v2, e.weight);
+        printf("v1: %d v2: %d weight: %d\n", e.v1, e.v2, e.weight);
     }
 
     return 0;
