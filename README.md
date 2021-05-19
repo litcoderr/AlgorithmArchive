@@ -11,12 +11,11 @@ Algorithm / Data Structure archive
 
 5. Kruscal's Algorithm (minimum spanning forest) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/5.minimum_spanning_tree/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/5.minimum_spanning_tree/python) ]
 
-6. Floyd Warshall Algorithm (shortest path) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/python) ]
+6. Floyd Warshall Algorithm (shortest path all to all) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/python) ]
 
+7. Dijkstra's Algorithm (shortest path single to all)
 
-7. Dijkstra's Algorithm (shortest path)
-
-8. Bellman Ford Algorithm (shortest path to all vertices)
+8. Bellman Ford Algorithm (shortest path single to all with negative weight cycle detection)
 
 9. Kadane's Algorithm (maximum subarray)
 
