@@ -15,7 +15,7 @@ Algorithm / Data Structure archive
 
 7. Dijkstra's Algorithm (shortest path single to all) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/7.dijkstra/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/7.dijkstra/python) ]
 
-8. Bellman Ford Algorithm (shortest path single to all with negative weight cycle detection)
+8. Bellman Ford Algorithm (shortest path single to all with negative weight cycle detection) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/8.bellman_ford/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/8.bellman_ford/python) ]
 
 9. Kadane's Algorithm (maximum subarray)
 
