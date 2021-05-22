@@ -13,7 +13,7 @@ Algorithm / Data Structure archive
 
 6. Floyd Warshall Algorithm (shortest path all to all) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/6.floyd_warshall/python) ]
 
-7. Dijkstra's Algorithm (shortest path single to all)
+7. Dijkstra's Algorithm (shortest path single to all) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/7.dijkstra/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/7.dijkstra/python) ]
 
 8. Bellman Ford Algorithm (shortest path single to all with negative weight cycle detection)
 
