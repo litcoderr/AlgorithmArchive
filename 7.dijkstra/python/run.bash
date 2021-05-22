@@ -1,0 +1,1 @@
+python -m main --input_file ../test.txt
