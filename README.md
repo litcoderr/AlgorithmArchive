@@ -17,7 +17,7 @@ Algorithm / Data Structure archive
 
 8. Bellman Ford Algorithm (shortest path single to all with negative weight cycle detection) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/8.bellman_ford/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/8.bellman_ford/python) ]
 
-9. Kadane's Algorithm (maximum subarray)
+9. Kadane's Algorithm (maximum subarray) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/9.kadane/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/9.kadane/python) ]
 
 10. Flood Fill Algorithm
 
