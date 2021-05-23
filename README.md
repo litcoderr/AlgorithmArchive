@@ -1,5 +1,4 @@
 # AlgorithmArchive
-Algorithm / Data Structure archive
 
 1. Binary Search Algorithm [ [cpp](https://github.com/litcoderr/AlgorithmArchive/tree/main/1.binary_search/cpp) / [python](https://github.com/litcoderr/AlgorithmArchive/tree/main/1.binary_search/python) ]
 
