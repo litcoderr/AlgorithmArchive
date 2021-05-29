@@ -18,10 +18,8 @@
 
 9. Kadane's Algorithm (maximum subarray) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/9.kadane/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/9.kadane/python) ]
 
-10. Flood Fill Algorithm
+10. Topological Sort
 
-11. Floyd's Cycle Detection Algorithm
+11. Flood Fill Algorithm
 
-12. Topological Sort
-
-13. Disjoint Set (Union-Find Algorithm)
+12. Disjoint Set (Union-Find Algorithm)
