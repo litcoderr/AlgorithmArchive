@@ -22,4 +22,4 @@
 
 11. Flood Fill Algorithm [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/11.flood_fill/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/11.flood_fill/python) ]
 
-12. Disjoint Set (Union-Find Algorithm)
+12. Disjoint Set (Union-Find Algorithm) [ [cpp](https://github.com/litcoderr/algorithmarchive/tree/main/12.union_find/cpp) / [python](https://github.com/litcoderr/algorithmarchive/tree/main/12.union_find/python) ]
